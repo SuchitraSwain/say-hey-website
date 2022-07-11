@@ -20,6 +20,16 @@
       body {
         font-family: "Poppins";
       }
+      .appointment {
+        width: 100%;
+        height: fit-content;
+        top: -30%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-top-right-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+        position: absolute;
+      }
       @media only screen and (max-width: 1020px) {
         .carousel-indicators {
           position: relative;
@@ -27,7 +37,20 @@
         .floater {
           visibility: hidden;
         }
+        .appointment {
+          position: static;
+          margin-top: 2em;
+        }
+        input[type="date"]::before {
+          color: #999;
+          content: attr(placeholder) ": ";
+        }
+        input[type="time"]::before {
+          color: #999;
+          content: attr(placeholder) ": ";
+        }
       }
+
       .doc-image {
         margin-bottom: 3%;
       }
@@ -503,16 +526,18 @@
     <div class="container mt-5 mb-3">
       <p class="fs-2 text-bold">Meet Our Specialist</p>
       <div class="row">
-        <div
-          class="col-md-3 d-flex flex-column doc-image"
-        >
+        <div class="col-md-3 d-flex flex-column doc-image">
           <div
-            class="position-relative d-flex flex-column "
+            class="position-relative d-flex flex-column"
             style="margin-bottom: 7%"
           >
             <div
               class="rounded-pill"
-              style="background-color: rgb(240, 252, 252);width: fit-content;align-self: center;"
+              style="
+                background-color: rgb(240, 252, 252);
+                width: fit-content;
+                align-self: center;
+              "
             >
               <img
                 src="./assets/DoctorImage1.png"
@@ -527,16 +552,18 @@
           <p class="fw-bold text-center mb-0">Ms. Zeal Jobanputra</p>
           <p class="text-center">Psychotherapist</p>
         </div>
-        <div
-          class="col-md-3 d-flex flex-column doc-image"
-        >
+        <div class="col-md-3 d-flex flex-column doc-image">
           <div
-            class="position-relative d-flex flex-column "
+            class="position-relative d-flex flex-column"
             style="margin-bottom: 7%"
           >
             <div
               class="rounded-pill"
-              style="background-color: rgb(240, 252, 252);width: fit-content;align-self: center;"
+              style="
+                background-color: rgb(240, 252, 252);
+                width: fit-content;
+                align-self: center;
+              "
             >
               <img
                 src="./assets/DoctorImage2.png"
@@ -551,16 +578,18 @@
           <p class="fw-bold text-center mb-0">Nivedita Dilip Kulkarni</p>
           <p class="text-center">Psychologist</p>
         </div>
-        <div
-          class="col-md-3 d-flex flex-column doc-image"
-        >
+        <div class="col-md-3 d-flex flex-column doc-image">
           <div
-            class="position-relative d-flex flex-column "
+            class="position-relative d-flex flex-column"
             style="margin-bottom: 7%"
           >
             <div
               class="rounded-pill"
-              style="background-color: rgb(240, 252, 252);width: fit-content;align-self: center;"
+              style="
+                background-color: rgb(240, 252, 252);
+                width: fit-content;
+                align-self: center;
+              "
             >
               <img
                 src="./assets/DoctorImage3.png"
@@ -575,16 +604,18 @@
           <p class="fw-bold text-center mb-0">Kruti Dharod</p>
           <p class="text-center">Psychologist</p>
         </div>
-        <div
-          class="col-md-3 d-flex flex-column doc-image"
-        >
+        <div class="col-md-3 d-flex flex-column doc-image">
           <div
-            class="position-relative d-flex flex-column "
+            class="position-relative d-flex flex-column"
             style="margin-bottom: 7%"
           >
             <div
               class="rounded-pill"
-              style="background-color: rgb(240, 252, 252);width: fit-content;align-self: center;"
+              style="
+                background-color: rgb(240, 252, 252);
+                width: fit-content;
+                align-self: center;
+              "
             >
               <img
                 src="./assets/DoctorImage4.png"
@@ -605,16 +636,18 @@
     <div class="container mt-5 mb-3">
       <p class="fs-2 text-bold">Meet Our Team</p>
       <div class="row">
-        <div
-          class="col-md-3 d-flex flex-column doc-image"
-        >
+        <div class="col-md-3 d-flex flex-column doc-image">
           <div
-            class="position-relative d-flex flex-column "
+            class="position-relative d-flex flex-column"
             style="margin-bottom: 7%"
           >
             <div
               class="rounded-pill"
-              style="background-color: rgb(240, 252, 252);width: fit-content;align-self: center;"
+              style="
+                background-color: rgb(240, 252, 252);
+                width: fit-content;
+                align-self: center;
+              "
             >
               <img
                 src="./assets/Kaushal.png"
@@ -623,22 +656,24 @@
               />
             </div>
             <div style="position: absolute; align-self: center; bottom: -5%">
-              <img src="./assets/DoctorIcon.png" class="img-fluid" alt="" />
+              <img src="./assets/LinkedInIcon.png" class="img-fluid" alt="" />
             </div>
           </div>
           <p class="fw-bold text-center mb-0">Kaushal Modi</p>
           <p class="text-center">Chief Executive Officer</p>
         </div>
-        <div
-          class="col-md-3 d-flex flex-column doc-image"
-        >
+        <div class="col-md-3 d-flex flex-column doc-image">
           <div
-            class="position-relative d-flex flex-column "
+            class="position-relative d-flex flex-column"
             style="margin-bottom: 7%"
           >
             <div
               class="rounded-pill"
-              style="background-color: rgb(240, 252, 252);width: fit-content;align-self: center;"
+              style="
+                background-color: rgb(240, 252, 252);
+                width: fit-content;
+                align-self: center;
+              "
             >
               <img
                 src="./assets/Manav.png"
@@ -647,22 +682,24 @@
               />
             </div>
             <div style="position: absolute; align-self: center; bottom: -5%">
-              <img src="./assets/DoctorIcon.png" class="img-fluid" alt="" />
+              <img src="./assets/LinkedInIcon.png" class="img-fluid" alt="" />
             </div>
           </div>
           <p class="fw-bold text-center mb-0">Manav Matolia</p>
           <p class="text-center">Chief Marketing Officer</p>
         </div>
-        <div
-          class="col-md-3 d-flex flex-column doc-image"
-        >
+        <div class="col-md-3 d-flex flex-column doc-image">
           <div
-            class="position-relative d-flex flex-column "
+            class="position-relative d-flex flex-column"
             style="margin-bottom: 7%"
           >
             <div
               class="rounded-pill"
-              style="background-color: rgb(240, 252, 252);width: fit-content;align-self: center;"
+              style="
+                background-color: rgb(240, 252, 252);
+                width: fit-content;
+                align-self: center;
+              "
             >
               <img
                 src="./assets/Ravi.png"
@@ -671,22 +708,24 @@
               />
             </div>
             <div style="position: absolute; align-self: center; bottom: -5%">
-              <img src="./assets/DoctorIcon.png" class="img-fluid" alt="" />
+              <img src="./assets/LinkedInIcon.png" class="img-fluid" alt="" />
             </div>
           </div>
           <p class="fw-bold text-center mb-0">Ravikanth Reddy</p>
           <p class="text-center">Chief Technology Officer</p>
         </div>
-        <div
-          class="col-md-3 d-flex flex-column doc-image"
-        >
+        <div class="col-md-3 d-flex flex-column doc-image">
           <div
-            class="position-relative d-flex flex-column "
+            class="position-relative d-flex flex-column"
             style="margin-bottom: 7%"
           >
             <div
               class="rounded-pill"
-              style="background-color: rgb(240, 252, 252);width: fit-content;align-self: center;"
+              style="
+                background-color: rgb(240, 252, 252);
+                width: fit-content;
+                align-self: center;
+              "
             >
               <img
                 src="./assets/Amey.png"
@@ -695,7 +734,7 @@
               />
             </div>
             <div style="position: absolute; align-self: center; bottom: -5%">
-              <img src="./assets/DoctorIcon.png" class="img-fluid" alt="" />
+              <img src="./assets/LinkedInIcon.png" class="img-fluid" alt="" />
             </div>
           </div>
           <p class="fw-bold text-center mb-0">Amey Khebade</p>
@@ -703,6 +742,310 @@
         </div>
       </div>
     </div>
-    
+    <!-- BOOK AN APPOINTMENT -->
+    <div
+      class="py-3 mt-5 mb-5"
+      style="
+        background: linear-gradient(
+          rgba(13, 165, 226, 1),
+          rgba(33, 210, 204, 1)
+        );
+      "
+    >
+      <div class="container mt-5 mb-3 text-white">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="fs-4 mb-0">With access to</p>
+            <h1 class="display-2">
+              24 HOUR <br />
+              EMERGENCY
+            </h1>
+            <p class="fs-4">Assistance</p>
+            <p>
+              Whenever you see the world turning upside down, there's always
+              hope for it to be back to its place. Similarly, there's always
+              hope for us to heal and get better every day.
+            </p>
+            <div class="d-flex mt-5 justify-content-between">
+              <div class="d-flex align-items-center">
+                <div>
+                  <img src="./assets/EmergencyIcon.png" class="img-fluid" />
+                </div>
+                <div class="ms-3">
+                  <p class="fw-bold fs-6 mb-0">EMERGENCY</p>
+                  <p class="mb-0">Medical Care 24/7</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <div>
+                  <img src="./assets/PhoneIcon.png" class="img-fluid" />
+                </div>
+                <div class="ms-3">
+                  <p class="fw-bold fs-5 mb-0">+91-9082588340</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <div class="bg-light appointment text-dark p-5">
+              <p class="mb-0">Need emergency?</p>
+              <p class="text-bold fs-3">
+                Book an
+                <text style="color: rgba(33, 210, 204, 1)">Appointment</text>
+              </p>
+              <form action="">
+                <div class="input-group mb-3">
+                  <button
+                    type="button"
+                    class="dropdown-toggle form-control"
+                    data-bs-toggle="dropdown"
+                  >
+                    Select Specialist
+                  </button>
+                  <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                  </ul>
+                </div>
+                <div class="input-group justify-content-between">
+                  <div class="col-md-8 mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      aria-describedby="name"
+                    />
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="age"
+                      placeholder="Your Age"
+                      aria-describedby="age"
+                    />
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Phone Number"
+                    aria-describedby="phone"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email Address"
+                    aria-describedby="email"
+                  />
+                </div>
+                <div class="input-group justify-content-between">
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date"
+                      placeholder="Date"
+                      aria-describedby="date"
+                    />
+                  </div>
+                  <div class="col-md-5 mb-3">
+                    <input
+                      type="time"
+                      class="form-control"
+                      id="time"
+                      placeholder="Select Time"
+                    />
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    placeholder="Type here..."
+                    rows="2"
+                  ></textarea>
+                </div>
+                <div class="input-group justify-content-center">
+                  <button
+                    class="btn button rounded-pill text-white"
+                    style="
+                      background-image: linear-gradient(
+                        rgba(13, 165, 226, 1),
+                        rgba(33, 210, 204, 1)
+                      );
+                    "
+                  >
+                    MAKE AN APPOINTMENT
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- QUICK AMENITIES -->
+    <div>
+      <div class="container mt-5 mb-3">
+        <p class="fw-bold fs-4">Quick Amenities</p>
+        <div class="row p-4">
+          <div class="col-md-4 mb-5">
+            <div class="card p-3 mb-2 h-100 position-relative">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <div class="icon" style="position: absolute; top: -10%">
+                    <img
+                      src="./assets/AmenitiesIcon1.png"
+                      class="img-fluid"
+                      style="width: 60%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title fw-bold">Specialised Therapy</h5>
+                <p class="card-text">
+                  Some mental health issues necessitate a highly specific form
+                  of treatment or therapy under serious conditions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card p-3 mb-2 h-100 position-relative">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <div class="icon" style="position: absolute; top: -10%">
+                    <img
+                      src="./assets/AmenitiesIcon2.png"
+                      class="img-fluid"
+                      style="width: 60%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title fw-bold">Couple Therapy</h5>
+                <p class="card-text">
+                  Couples therapy is a type of psychotherapy that can help you
+                  and your partner better understand and manage your
+                  relationship. Couples counselling can benefit any couple,
+                  regardless of their sexual orientation or age.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card p-3 mb-2 h-100 position-relative">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <div class="icon" style="position: absolute; top: -10%">
+                    <img
+                      src="./assets/AmenitiesIcon3.png"
+                      class="img-fluid"
+                      style="width: 60%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title fw-bold">Children Counselling</h5>
+                <p class="card-text">
+                  Child counselling is a therapy aimed at young children,
+                  teenagers, and adolescents who are suffering from emotional
+                  and mental distress.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card p-3 mb-2 h-100 position-relative">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <div class="icon" style="position: absolute; top: -10%">
+                    <img
+                      src="./assets/AmenitiesIcon4.png"
+                      class="img-fluid"
+                      style="width: 60%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title fw-bold">Parental Counselling</h5>
+                <p class="card-text">
+                  Parent counselling is a nonjudgmental service that aims to
+                  give you information, advice, resources, and emotional
+                  support. It focuses on how you, as a parent, influence your
+                  family's dynamics.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card p-3 mb-2 h-100 position-relative">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <div class="icon" style="position: absolute; top: -10%">
+                    <img
+                      src="./assets/AmenitiesIcon5.png"
+                      class="img-fluid"
+                      style="width: 60%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title fw-bold">Corporate Counselling</h5>
+                <p class="card-text">
+                  Corporate counselling tries to reduce employee stress levels
+                  and assist them in choosing healthier lifestyle choices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="card p-3 mb-2 h-100 position-relative">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                  <div class="icon" style="position: absolute; top: -10%">
+                    <img
+                      src="./assets/AmenitiesIcon6.png"
+                      class="img-fluid"
+                      style="width: 60%"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5 class="card-title fw-bold">
+                  School / Colleges Counselling
+                </h5>
+                <p class="card-text">
+                  School counseling is provided to students in grades K-12 in
+                  both public and private schools. Counseling is intended to
+                  help kids achieve academic success, improve their behaviour
+                  and attendance, and develop socially.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SERVICE RECIPIENT -->
+    <div class="mt-4" style="background-color: rgba(13, 165, 226, 0.04)">
+      <div class="container">
+        <p class="fw-bold fs-4">Service Recipient Says</p>
+      </div>
+    </div>
   </body>
 </html>
