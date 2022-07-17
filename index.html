@@ -64,6 +64,10 @@
           color: #999;
           content: attr(placeholder) ": ";
         }
+        .navbar-collapse {
+          height: 100vh;
+          text-align: center;
+        }
       }
 
       .doc-image {
@@ -89,6 +93,7 @@
         background-color: #0da5e2;
       }
     </style>
+    <link rel="stylesheet" href="custom.css" />
     <title>Hello, world!</title>
   </head>
   <body>
@@ -100,13 +105,13 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand ms-4" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(255, 255, 255, 1);">
+      <div class="container">
+        <a class="navbar-brand" href="#">
           <img src="./assets/CompanyLogo.png" alt="" />
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -114,27 +119,29 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 gap-4">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link fw-bold" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Professional</a>
+              <a class="nav-link fw-bold" href="#">Professional</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Team</a>
+              <a class="nav-link fw-bold" href="#">Our Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Service</a>
+              <a class="nav-link fw-bold" href="#">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link fw-bold" href="#">Blog</a>
             </li>
           </ul>
         </div>
@@ -1333,6 +1340,5 @@
         </div>
       </div>
     </footer>
-    
   </body>
 </html>
