@@ -69,28 +69,35 @@
           text-align: center;
         }
       }
-
+      .bubbleBackground {
+        background-image: url("./assets/BGdots.png");
+        background-repeat: repeat;
+      }
+      .floater {
+        background-color: white;
+      }
       .doc-image {
         margin-bottom: 3%;
       }
       .carousel-indicators [data-bs-target] {
         box-sizing: content-box;
         flex: 0 1 auto;
-        width: 10px; /* change width */
-        height: 10px; /* change height */
+        width: 14px; /* change width */
+        height: 14px; /* change height */
         padding: 0;
         cursor: pointer;
-        background-color: grey;
+        background-color: transparent;
         background-clip: padding-box;
-        border: 0;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
+        border: 1px solid #0DA5E2 ;
+        /* border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent; */
         opacity: 0.5;
         transition: opacity 0.6s ease;
         border-radius: 100%;
+        margin-left:8px;
       }
       .carousel-indicators .active {
-        background-color: #0da5e2;
+        background-color: #0DA5E2;
       }
     </style>
     <link rel="stylesheet" href="custom.css" />
@@ -105,13 +112,16 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(255, 255, 255, 1);">
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: rgba(255, 255, 255, 1)"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="./assets/CompanyLogo.png" alt="" />
         </a>
         <button
-          class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+          class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around me-2"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -124,9 +134,11 @@
           <span class="toggler-icon bottom-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 gap-4">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 gap-2">
             <li class="nav-item">
-              <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+              <a class="nav-link active fw-bold" aria-current="page" href="#"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link fw-bold" href="#">About</a>
@@ -148,16 +160,16 @@
       </div>
     </nav>
     <!-- HERO CAROUSEL -->
-    <div
+    <section
       id="carouselExampleIndicators"
       class="carousel slide bg-light"
       data-bs-ride="carousel"
       data-interval="200"
     >
       <div class="carousel-inner text-center text-white">
-        <div class="carousel-item active">
-          <section class="hero-banner bg-light my-3">
-            <div class="container">
+        <div class="carousel-item active py-5">
+          <section class="hero-banner">
+            <div class="container bubbleBackground">
               <div class="row row align-items-center">
                 <div class="col-lg-5 offset-lg-1 order-lg-1 position-relative">
                   <img
@@ -166,7 +178,7 @@
                     alt="Web Development"
                   />
                   <div
-                    class="floater text-dark d-flex align-items-center p-2 bg-light rounded"
+                    class="floater text-dark d-flex align-items-center p-2 rounded"
                     style="
                       position: absolute;
                       bottom: 0;
@@ -187,7 +199,7 @@
                     </p>
                   </div>
                   <div
-                    class="floater text-dark d-flex align-items-center p-2 bg-light rounded"
+                    class="floater text-dark d-flex align-items-center p-2 rounded"
                     style="
                       position: absolute;
                       bottom: 0;
@@ -209,8 +221,8 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <h1 class="mt-3 text-dark">
+                <div class="col-lg-6 text-start">
+                  <h1 class="mt-3 text-dark fw-bold">
                     Personal Care For Your Mental Health
                   </h1>
                   <p class="lead text-secondary my-5">
@@ -219,28 +231,33 @@
                     and will help you tofind ways to enjoy your life again.
                   </p>
                   <button
-                    href="#"
-                    class="btn btn-primary btn-outline-secondary btn-lg border mr-auto text-white rounded-pill"
+                    class="btn button rounded-pill text-white py-2 px-5"
+                    style="
+                      background-image: linear-gradient(
+                        rgba(13, 165, 226, 1),
+                        rgba(33, 210, 204, 1)
+                      );
+                    "
                   >
-                    Book Now
+                    BOOK NOW
                   </button>
                 </div>
               </div>
             </div>
           </section>
         </div>
-        <div class="carousel-item">
-          <section class="hero-banner bg-light my-3">
-            <div class="container">
+        <div class="carousel-item py-5">
+          <section class="hero-banner">
+            <div class="container bubbleBackground">
               <div class="row row align-items-center">
-                <div class="col-lg-5 offset-lg-1 order-lg-1">
+                <div class="col-lg-5 offset-lg-1 order-lg-1 position-relative">
                   <img
                     src="./assets/BannerImage2.png"
-                    class="img-fluid"
+                    class="img-fluid bg-img"
                     alt="Web Development"
                   />
                   <div
-                    class="floater text-dark d-flex align-items-center p-2 bg-light rounded"
+                    class="floater text-dark d-flex align-items-center p-2 rounded"
                     style="
                       position: absolute;
                       bottom: 0;
@@ -261,7 +278,7 @@
                     </p>
                   </div>
                   <div
-                    class="floater text-dark d-flex align-items-center p-2 bg-light rounded"
+                    class="floater text-dark d-flex align-items-center p-2 rounded"
                     style="
                       position: absolute;
                       bottom: 0;
@@ -283,36 +300,44 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <h1 class="mt-3 text-dark">Take The mental health test</h1>
+                <div class="col-lg-6 text-start">
+                  <h1 class="mt-3 text-dark fw-bold">
+                    Take The Mental <br />
+                    Health Test
+                  </h1>
                   <p class="lead text-secondary my-5">
                     You can identify your problem and seek professional
                     assistance with the help of a test. Only if you answer
                     honestly and completely will the result be useful.
                   </p>
                   <button
-                    href="#"
-                    class="btn btn-primary btn-outline-secondary btn-lg border mr-auto text-white rounded-pill"
+                    class="btn button rounded-pill text-white py-2 px-5"
+                    style="
+                      background-image: linear-gradient(
+                        rgba(13, 165, 226, 1),
+                        rgba(33, 210, 204, 1)
+                      );
+                    "
                   >
-                    Book Now
+                    BOOK NOW
                   </button>
                 </div>
               </div>
             </div>
           </section>
         </div>
-        <div class="carousel-item">
-          <section class="hero-banner bg-light my-3">
-            <div class="container">
+        <div class="carousel-item py-5">
+          <section class="hero-banner">
+            <div class="container bubbleBackground">
               <div class="row row align-items-center">
-                <div class="col-lg-5 offset-lg-1 order-lg-1">
+                <div class="col-lg-5 offset-lg-1 order-lg-1 position-relative">
                   <img
                     src="./assets/BannerImage3.png"
-                    class="img-fluid"
+                    class="img-fluid bg-img"
                     alt="Web Development"
                   />
                   <div
-                    class="floater text-dark d-flex align-items-center p-2 bg-light rounded"
+                    class="floater text-dark d-flex align-items-center p-2 rounded"
                     style="
                       position: absolute;
                       bottom: 0;
@@ -333,7 +358,7 @@
                     </p>
                   </div>
                   <div
-                    class="floater text-dark d-flex align-items-center p-2 bg-light rounded"
+                    class="floater text-dark d-flex align-items-center p-2 rounded"
                     style="
                       position: absolute;
                       bottom: 0;
@@ -355,8 +380,10 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <h1 class="mt-3 text-dark">Workshops and activities</h1>
+                <div class="col-lg-6 text-start">
+                  <h1 class="mt-3 text-dark fw-bold">
+                    Workshops And <br> Activities
+                  </h1>
                   <p class="lead text-secondary my-5">
                     Are you considering seeking professional treatment from a
                     therapist? Therapy might assist you if certain issues have
@@ -364,10 +391,15 @@
                     to make the necessary changes.
                   </p>
                   <button
-                    href="#"
-                    class="btn btn-primary btn-outline-secondary btn-lg border mr-auto text-white rounded-pill"
+                    class="btn button rounded-pill text-white py-2 px-5"
+                    style="
+                      background-image: linear-gradient(
+                        rgba(13, 165, 226, 1),
+                        rgba(33, 210, 204, 1)
+                      );
+                    "
                   >
-                    Book Now
+                    BOOK NOW
                   </button>
                 </div>
               </div>
@@ -397,9 +429,9 @@
           aria-label="Slide 3"
         ></button>
       </div>
-    </div>
+    </section>
     <!-- BETTER REASON CARDS -->
-    <div class="mt-5">
+    <section class="mt-5">
       <div class="container mt-5 mb-3">
         <div class="d-flex align-items-end">
           <div class="w-50 fw-bold fs-2">
@@ -493,9 +525,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- HOW WE WORK -->
-    <div
+    <section
       class="d-flex container-fluid mt-5 mb-3 p-5"
       style="background-color: rgba(13, 165, 226, 0.04)"
     >
@@ -541,9 +573,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- MEET OUR SPECIALIST -->
-    <div class="container mt-5 mb-3">
+    <section class="container mt-5 mb-3">
       <div class="d-flex align-items-center justify-content-between">
         <p class="fs-2 text-bold">Meet Our Specialist</p>
         <ul class="pagination pagination-flush gap-3">
@@ -665,9 +697,9 @@
           <p class="text-center">Psychologist</p>
         </div>
       </div>
-    </div>
+    </section>
     <!-- MEET OUR TEAM -->
-    <div class="container mt-5 mb-3">
+    <section class="container mt-5 mb-3">
       <p class="fs-2 text-bold">Meet Our Team</p>
       <div class="row">
         <div class="col-md-3 d-flex flex-column doc-image">
@@ -775,9 +807,9 @@
           <p class="text-center">Social Media Manager</p>
         </div>
       </div>
-    </div>
+    </section>
     <!-- BOOK AN APPOINTMENT -->
-    <div
+    <section
       class="py-3 mt-5 mb-5"
       style="
         background: linear-gradient(
@@ -925,9 +957,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- QUICK AMENITIES -->
-    <div>
+    <section>
       <div class="container mt-5 mb-3">
         <p class="fw-bold fs-4">Quick Amenities</p>
         <div class="row p-4">
@@ -1074,9 +1106,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- SERVICE RECIPIENT -->
-    <div class="mt-4" style="background-color: rgba(13, 165, 226, 0.04)">
+    <section class="mt-4" style="background-color: rgba(13, 165, 226, 0.04)">
       <div class="container py-4">
         <div class="d-flex align-items-center justify-content-between">
           <p class="fw-bold fs-4">Service Recipient Says</p>
@@ -1188,9 +1220,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- NEWS AND BLOG -->
-    <div class="mt-5">
+    <section class="mt-5">
       <div class="container mb-3">
         <p class="fw-bold fs-4">News & Blog</p>
         <div class="row gap-5 px-4">
@@ -1272,7 +1304,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- FOOTER -->
     <footer class="bg-light">
       <div class="container py-4">
