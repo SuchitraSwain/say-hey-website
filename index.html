@@ -68,9 +68,28 @@
           height: 100vh;
           text-align: center;
         }
-        .hero_text{
+        .hero_text {
           text-align: center !important;
         }
+        .better_reason {
+          height: fit-content !important;
+        }
+      }
+      .better_reason {
+        height: 100vh;
+      }
+      .better_reason_card :hover {
+        background-color: rgba(13, 165, 226, 1);
+        color: white;
+      }
+      .better_reason_card :hover .icon {
+        background-color: white !important;
+      }
+      .better_reason_card :hover .card-text {
+        color: white;
+      }
+      .better_reason_card .card-text {
+        color: #828282;
       }
       .bubbleBackground {
         background-image: url("./assets/BGdots.png");
@@ -82,6 +101,11 @@
       .doc-image {
         margin-bottom: 3%;
       }
+      .card_img {
+        width: fit-content;
+        border-radius: 8px;
+        background-color: rgba(33, 210, 204, 0.06);
+      }
       .carousel-indicators [data-bs-target] {
         box-sizing: content-box;
         flex: 0 1 auto;
@@ -91,13 +115,13 @@
         cursor: pointer;
         background-color: transparent;
         background-clip: padding-box;
-        border: 1px solid #0DA5E2 ;
+        border: 1px solid #0da5e2;
         /* border-top: 10px solid transparent;
         border-bottom: 10px solid transparent; */
         opacity: 0.5;
         transition: opacity 0.6s ease;
         border-radius: 100%;
-        margin-left:8px;
+        margin-left: 8px;
       }
       .carousel-indicators .active {
         background-color: #0da5e2;
@@ -228,7 +252,7 @@
                   <h1 class="mt-3 text-dark fw-bold">
                     Personal Care For Your Mental Health
                   </h1>
-                  <p class=" text-dark mt-4 mb-5">
+                  <p class="text-dark mt-4 mb-5">
                     Our professional will take the time to dicuss about your
                     personal care and what can you do to take care of yourself
                     and will help you tofind ways to enjoy your life again.
@@ -308,7 +332,7 @@
                     Take The Mental <br />
                     Health Test
                   </h1>
-                  <p class=" text-dark mt-4 mb-5">
+                  <p class="text-dark mt-4 mb-5">
                     You can identify your problem and seek professional
                     assistance with the help of a test. Only if you answer
                     honestly and completely will the result be useful.
@@ -385,9 +409,10 @@
                 </div>
                 <div class="col-lg-6 hero_text text-start">
                   <h1 class="mt-3 text-dark fw-bold">
-                    Workshops And <br> Activities
+                    Workshops And <br />
+                    Activities
                   </h1>
-                  <p class=" text-dark mt-4 mb-5">
+                  <p class="text-dark mt-4 mb-5">
                     Are you considering seeking professional treatment from a
                     therapist? Therapy might assist you if certain issues have
                     been generating problems in your life and you are unsure how
@@ -434,94 +459,92 @@
       </div>
     </section>
     <!-- BETTER REASON CARDS -->
-    <section class="mt-5">
-      <div class="container mt-5 mb-3">
+    <section class="my-5 py-5 better_reason">
+      <div class="container">
         <div class="d-flex align-items-end">
           <div class="w-50 fw-bold fs-2">
-            <p>Some reasons why we are better than others?</p>
+            <p>Some reasons why we are <br> better than others?</p>
           </div>
           <div class="mx-auto" style="width: 30%">
             <img
               src="./assets/TraceImage.png"
-              class="img-fluid"
+              class="img-fluid h-100"
               alt=""
               srcset=""
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <div class="card p-3 mb-2 h-100">
-              <div class="d-flex justify-content-between">
-                <div class="d-flex flex-row align-items-center">
-                  <div class="icon">
-                    <img
-                      src="./assets/SpecialisedTherapyImage.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
+        <div class="row mt-4">
+          <div class="col-md-3 mb-3 better_reason_card">
+            <div class="card h-100">
+              <div class="card-body mb-4">
+                <div class="icon mb-3 p-3 card_img">
+                  <img
+                    src="./assets/SpecialisedTherapyImage.png"
+                    class="img-fluid icon"
+                    alt=""
+                    srcset=""
+                  />
                 </div>
-              </div>
-              <div class="card-body">
                 <h5 class="card-title fw-bold">Specialised Therapy</h5>
-                <p class="card-text">
+                <p class="card-text mt-2" style="font-size: 14px">
                   Some mental health issues necessitate a highly specific form
                   of treatment or therapy under serious conditions.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
-            <div class="card p-3 mb-2 h-100">
-              <div class="d-flex justify-content-between">
-                <div class="d-flex flex-row align-items-center">
-                  <div class="icon">
-                    <img src="./assets/TakeTestImage.png" alt="" srcset="" />
-                  </div>
+          <div class="col-md-3 mb-3 better_reason_card">
+            <div class="card h-100">
+              <div class="card-body mb-4">
+                <div class="icon mb-3 p-3 card_img">
+                  <img
+                    src="./assets/TakeTestImage.png"
+                    class="img-fluid icon"
+                    alt=""
+                    srcset=""
+                  />
                 </div>
-              </div>
-              <div class="card-body">
                 <h5 class="card-title fw-bold">Take the Test</h5>
-                <p class="card-text">
-                  Take a simple test to see if you're suffering from the
-                  symptoms of a mental illness.
+                <p class="card-text mt-2" style="font-size: 14px">
+                  Take a simple test to see if you're suffering from the symptoms of a mental illness.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
-            <div class="card p-3 mb-2 h-100">
-              <div class="d-flex justify-content-between">
-                <div class="d-flex flex-row align-items-center">
-                  <div class="icon">
-                    <img src="./assets/PrivacyImage.png" alt="" srcset="" />
-                  </div>
+          <div class="col-md-3 mb-3 better_reason_card">
+            <div class="card h-100">
+              <div class="card-body mb-4">
+                <div class="icon mb-3 p-3 card_img">
+                  <img
+                    src="./assets/PrivacyImage.png"
+                    class="img-fluid icon"
+                    alt=""
+                    srcset=""
+                  />
                 </div>
-              </div>
-              <div class="card-body">
                 <h5 class="card-title fw-bold">100% Privacy</h5>
-                <p class="card-text">
-                  Book Counselling at your convenience on Call or Video with
-                  100% Privacy
+                <p class="card-text mt-2" style="font-size: 14px">
+                  Book Counselling at your convenience on Call or Video with 100% Privacy
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
-            <div class="card p-3 mb-2 h-100">
-              <div class="d-flex justify-content-between">
-                <div class="d-flex flex-row align-items-center">
-                  <div class="icon">
-                    <img src="./assets/WorkshopImage.png" alt="" srcset="" />
-                  </div>
+          <div class="col-md-3 mb-3 better_reason_card">
+            <div class="card h-100">
+              <div class="card-body mb-4">
+                <div class="icon mb-3 p-3 card_img">
+                  <img
+                    src="./assets/SpecialisedTherapyImage.png"
+                    class="img-fluid icon"
+                    alt=""
+                    srcset=""
+                  />
                 </div>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Workshops & Activities</h5>
-                <p class="card-text">
-                  To learn more about mental health issues, join for our
-                  interesting workshops and activities.
+                <h5 class="card-title fw-bold">Specialised Therapy</h5>
+                <p class="card-text mt-2" style="font-size: 14px">
+                  Some mental health issues necessitate a highly specific form
+                  of treatment or therapy under serious conditions.
                 </p>
               </div>
             </div>
